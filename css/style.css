@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --border-corner:10px;
+    --purple:hsl(300,43%,22%);
+    --grey:hsl(303,10%,53%);
+    /* i am using global variable because i just learned it recently and personally wanted to check it out.So dont mind and u dont need to use it tho */
+}
+
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../images/bg-pattern-bottom-desktop.svg'),url('../images/bg-pattern-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top right, top left;
+    position: relative;  
+    outline: 2px solid green;
+}
+h1{
+    font-family: 'League Spartan',sans-serif;
+    margin-left: 180px;
+    margin-top: 120px;
+    color: var(--purple);
+    font-size: 60px;
+    width: 400px;
+}
+.paragraph{
+    color:  var(--grey);
+    margin-left:180px;
+    margin-top:30px;
+    font-family: 'League Spartan',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    width: 500px;
+}
+.space{
+    margin-left: -95px;
+    
+}
+.review{
+    font-family: 'League Spartan',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:var(--purple);
+    border: none;
+    background-color:hsl(300, 24%, 96%) ;
+    border-radius: var(--border-corner);
+    padding: 20px;
+    width: 440px;
+    position: absolute;
+    right: 280px;
+    top: 30px;
+
+}
+.reportguru{
+    font-family: 'League Spartan',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:var(--purple);
+    border: none;
+    background-color:hsl(300, 24%, 96%) ;
+    border-radius: var(--border-corner);
+    padding: 20px;
+    padding-left: 60px;
+    width: 440px;
+    position: absolute;
+    right: 240px;
+    top: 100px;
+
+
+}
+.besttech{
+    font-family: 'League Spartan',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:var(--purple);
+    border: none;
+    background-color:hsl(300, 24%, 96%) ;
+    border-radius: var(--border-corner);
+    padding: 20px;
+    padding-left: 80px;
+    width: 440px;
+    position: absolute;
+    right: 200px;
+    top: 170px;
+
+}
+.box{
+    /* border: 2px solid black; */
+    border-radius: var(--border-corner);
+    height: 250px;
+    width:30%;
+    display: inline-block;
+    background-color: var(--purple);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+
+
+.container{
+    height: 400px;
+    width: 1200px;
+    margin-left: 180px;
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+}
+#container1{
+    position: absolute;
+    left: 0px;
+}
+
+
+#container2{
+   
+    position: absolute;
+    left: 400px;
+    top: 30px;
+}
+#container3{
+    position: absolute;
+    left:800px;
+    top: 60px;
+
+} 
+div > img{
+    border-radius: 50%;
+    height: 50px;
+    margin: 20px;
+}
+div > p{
+    color:white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    /* position: absolute; */
+    margin: 20px;
+    width: 300px;
+    line-height: 20px;
+
+}
+div > span.name{
+    color:hsl(0, 0%, 100%);
+    font-family: 'League Spartan',sans-serif;
+    position: absolute;
+    left: 100px;
+    top: 30px;
+   
+    
+}
+div > span.buyer{
+    color: hsl(333, 80%, 67%);
+    font-family: 'League Spartan',sans-serif;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+
+
+}
+@media screen and (min-width:0px)  and (max-width:375px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
